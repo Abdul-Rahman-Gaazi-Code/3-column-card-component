@@ -1,42 +1,40 @@
 # Vehicle Category Cards
 
-A simple frontend component built with HTML and CSS — three cards sitting side by side, each representing a vehicle category: Sedans, SUVs, and Luxury.
+A 3-column card component built from scratch using HTML, and CSS. Each card represents a vehicle category — Sedans, SUVs, and Luxury — with icons, descriptions, hover buttons, and a dark mode toggle.
 
 ---
 
 ## What I Built
 
-A fixed 3-column card layout using flexbox. Each card has its own background color, an icon inside a dark circle, a heading, a short description, and a Learn More button. No JavaScript, no frameworks — just HTML and CSS.
+Three cards sitting side by side, each with its own background color, an SVG icon positioned relative to a dark circle, a heading, a short description, and a Learn More button.
 
 ---
 
 ## Lessons Learnt
 
-**Semantic HTML matters**
-I used `<section>`, `<ol>`, `<li>`, and `<article>` instead of just throwing everything into divs. It made the structure cleaner and easier to read.
+**Semantic HTML makes your code readable**
+Using tags like `<section>`, `<ol>`, `<li>`, and `<article>` instead of divs everywhere gave the markup real meaning and made it easier to navigate.
 
-**Flexbox for layout**
-`display: flex` on the parent lined the three cards up side by side. I also used flexbox inside each card with `flex-direction: column` and `justify-content: space-evenly` to space out the content vertically.
+**Flexbox handles layout in two directions**
+I used `display: flex` on the cards to line the cards up horizontally, and `flex-direction: column` inside each card to stack the content vertically with even spacing.
 
-**Buttons have default browser styles**
-A button stretches full width by default. I had to set `width: fit-content` and `padding: 0 2rem` to get it to wrap tightly around the text.
+**Buttons have default browser styles that fight you**
+A button stretches to fill its container by default. Setting `width: fit-content` and controlling padding manually was the fix.
 
-**CSS filters for icon color**
-I used `filter: brightness(0) invert(1)` to turn dark SVG icons white without editing the actual SVG files.
+**CSS filters change SVG colors without touching the file**
+`filter: brightness(0) invert(1)` turns any dark icon white instantly. No need to open the SVG and edit the fill.
 
-**Positioning is relative to the element itself**
-Using `position: relative` with `left` moves the element from where it naturally sits, not from the page. I used this to shift the icon slightly inside the circle.
+**Wrapping icons in a div gives you full control**
+Putting the image inside a circle div and centering it with flexbox made it easy to control the circle and icon sizes independently, and gave a cleaner result than padding the image directly.
 
-**Wrapping icons in a div gives you more control**
-Instead of styling the image directly, I wrapped it in a `div` and used flexbox to center it. This made it easy to control the circle size and icon size independently.
+**Hover states make interactions feel alive**
+Each button changes to its card's background color on hover with a smooth transition using `transition: background-color 0.3s ease, color 0.3s ease`.
 
-**`object-fit: contain` keeps images from distorting**
-When I gave the image a fixed width and height, it was stretching. `object-fit: contain` kept the aspect ratio intact.
+**CSS filters change SVG colors without touching the file**
+`filter: brightness(0) invert(1)` turns any dark icon white instantly. No need to open the SVG and edit the fill.
 
-**CSS custom colors with rgba**
-Using `rgba(0, 0, 0, 0.4)` instead of a solid color gave the icon background a see-through dark tint that blends nicely with each card color.
-
----
+**`rgba` for subtle transparency**
+Using `rgba(0, 0, 0, 0.4)` for the icon circle background blends naturally with each card color instead of clashing with a solid color.
 
 ## Tech Used
 
@@ -45,4 +43,3 @@ Using `rgba(0, 0, 0, 0.4)` instead of a solid color gave the icon background a s
 - Google Fonts (Big Shoulders, Roboto)
 
 ---
-
