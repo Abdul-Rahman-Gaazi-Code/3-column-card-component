@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Big Shoulders";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #ffffff;
+}
+.cards-flex {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  min-height: 500px;
+  cursor: pointer;
+}
+
+/*--Cards1--*/
+.cards1 {
+  background-color: #e18524;
+  width: 280px;
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 500px;
+  border-radius: 8px 0 0 8px;
+}
+
+.cards1 h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.cards1 p {
+  font-family: "lexend Deca", sans-serif;
+  line-height: 25px;
+  opacity: 0.7;
+}
+
+.btn1 {
+  width: fit-content;
+  height: 40px;
+  padding: 0 2rem;
+  background-color: #fff;
+  color: #edb06f;
+  border: none;
+  border-radius: 999px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.btn1:hover {
+  background-color: #e18524;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*--Cards2--*/
+.cards2 {
+  background-color: #006972;
+  width: 280px;
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+
+.cards2 h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.cards2 p {
+  font-family: "lexend Deca", sans-serif;
+  line-height: 25px;
+  opacity: 0.7;
+}
+
+.btn2 {
+  width: fit-content;
+  height: 40px;
+  padding: 0 2rem;
+  background-color: #fff;
+  color: #006972;
+  border: none;
+  border-radius: 999px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #006972;
+  color: #fff;
+  cursor: pointer;
+}
+/*--Cards3--*/
+
+.cards3 {
+  background-color: #00413f;
+  width: 280px;
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 500px;
+  border-radius: 0 8px 8px 0;
+  
+}
+
+.cards3 h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.cards3 p {
+  font-family: "lexend Deca", sans-serif;
+  line-height: 25px;
+  opacity: 0.7;
+}
+
+.btn3 {
+  width: fit-content;
+  height: 40px;
+  padding: 0 2rem;
+  background-color: #fff;
+  color: #00413f;
+  border: none;
+  border-radius: 999px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.btn3:hover {
+  background-color: #00413f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*--SVG--*/
+.svg-circle {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.svg-circle img {
+  width: 45px;
+  height: 45px;
+  filter: brightness(0) invert(1);
+  position: absolute;
+  left: 65%;
+}
