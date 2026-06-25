@@ -1,4 +1,6 @@
-# Vehicle Category Cards
+# 3-column-card-component
+
+
 
 A 3-column card component built from scratch using HTML, and CSS. Each card represents a vehicle category — Sedans, SUVs, and Luxury — with icons, descriptions, hover buttons, and a dark mode toggle.
 
